@@ -1,0 +1,16 @@
+name: "Post to Slack"
+description: "Posts or updates messages to slack"
+inputs:
+  token:
+    description: the authorization token to use with the slack API
+    required: true
+  message:
+    description: the message to send
+    required: true
+
+outputs:
+  timestamp: # id of output
+    description: "The timestamp of the message that was sent"
+runs:
+  using: "node16"
+  main: "dist/index.mjs"
