@@ -12,5 +12,5 @@ outputs:
   timestamp: # id of output
     description: "The timestamp of the message that was sent"
 runs:
-  using: "node16"
+  using: "node20"
   main: "dist/index.mjs"
